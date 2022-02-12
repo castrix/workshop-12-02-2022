@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Workshop Refactory 12-02-2022</h1>
+<h2>Working template</h2>
+
+<p id="demo"></p>
+
+<script>
+  let menu = ""
+  const data = ["Mie ayam", "Es Campur", "Nasi Telor", "Steak Wagyu"]
+
+  data.forEach((item, index) => {
+    menu += `${index+1}: ${item}<br />`;
+  })
+
+  document.getElementById("demo").innerHTML = menu
+</script>
+
+</body>
+</html>

@@ -5,9 +5,37 @@
 <h1>Workshop Refactory 12-02-2022</h1>
 <h2>Working template</h2>
 
-<p id="demo"></p>
+<ul id="demo"></ul>
 
 <script>
+  const produk = [
+  {
+    nama: "Pisang Goreng",
+    biayaProduksi: 1000,
+    laba: 4000
+  },
+  {
+    nama: "Es Teh",
+    biayaProduksi: 100,
+    laba: 1900
+  },
+  {
+    nama: "Bakwan",
+    biayaProduksi: 200,
+    laba: 800
+  }
+]
+
+const output = produk.map(function (item, index) {
+  return {
+    nama: item.nama,
+    biayaProduksi: item.biayaProduksi,
+    laba: item.laba - 100,
+    hargaJual: item.biayaProduksi + item.laba
+  }
+})
+
+console.log(output)
 </script>
 
 </body>

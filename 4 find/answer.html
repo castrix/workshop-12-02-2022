@@ -8,6 +8,34 @@
 <p id="demo"></p>
 
 <script>
+const phone = [
+  {
+    seri: "Iphone 13",
+    warna: "Grey",
+    stok: 10
+  },
+  {
+    seri: "Iphone 13",
+    warna: "Red",
+    stok: 20
+  },
+  {
+    seri: "Iphone 12",
+    warna: "Sierra Blue",
+    stok: 0
+  },
+  {
+    seri: "Iphone 13",
+    warna: "Sierra Blue",
+    stok: 0
+  }
+]
+
+const output = phone.find(function (item, index) {
+  return item.seri === "Iphone 13" && item.warna === "Sierra Blue"
+})
+
+console.log(output)
 </script>
 
 </body>

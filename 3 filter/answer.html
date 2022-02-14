@@ -5,9 +5,37 @@
 <h1>Workshop Refactory 12-02-2022</h1>
 <h2>Working template</h2>
 
-<p id="demo"></p>
+<ul id="demo"></ul>
 
 <script>
+const phone = [
+  {
+    brand: "Xiaomi",
+    seri: "X6",
+    terjual: true
+  },
+  {
+    brand: "Realme",
+    seri: "A8",
+    terjual: true
+  },
+  {
+    brand: "Iphone",
+    seri: "13",
+    terjual: false
+  },
+  {
+    brand: "Iphone",
+    seri: "12",
+    terjual: false
+  }
+]
+
+const sold = phone.filter(item => item.terjual)
+const notSold = phone.filter(item => !item.terjual)
+
+console.log(sold)
+console.log(notSold)
 </script>
 
 </body>

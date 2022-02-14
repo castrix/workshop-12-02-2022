@@ -8,6 +8,28 @@
 <p id="demo"></p>
 
 <script>
+const terjual = [
+  {
+    nama: "Pisang Goreng",
+    biayaProduksi: 1000,
+    laba: 4000
+  },
+  {
+    nama: "Es Teh",
+    biayaProduksi: 100,
+    laba: 1900
+  },
+  {
+    nama: "Bakwan",
+    biayaProduksi: 200,
+    laba: 800
+  }
+]
+const output = terjual.reduce(function(total, item) {
+    return total + item.laba
+  }, 0)
+
+console.log(output)
 </script>
 
 </body>
